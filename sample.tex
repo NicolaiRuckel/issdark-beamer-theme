@@ -1,0 +1,43 @@
+\documentclass{beamer}
+
+\title{Sample Title}
+\subtitle{Sample Subtitle}
+\author{Nicolai Ruckel}
+\date{\today}
+\titlegraphic{\flushright\includegraphics[width=.7\textwidth]{example-image-a}}
+
+\usetheme{issdark}
+
+\begin{document}
+
+\frame {
+  \titlepage
+}
+
+\frame {
+  \frametitle{Sample Page 1}
+  You can \lalert{highlight} random words like \lalert{all} the other cool kids!
+}
+
+\frame{
+  \frametitle{Sample Page 2}
+  \framesubtitle{An Example of Lists}
+  \begin{itemize}
+    \item 1
+    \item 2
+    \item 3
+  \end{itemize}
+}
+
+\frame{
+  btw i uses arch\footnotemark.
+  \footnotetext{\url{https://www.archlinux.org/}}
+}
+
+\frame{
+  \frametitle{A Famous Quote}
+  \boxenquote{To avoid horrible confusion, please pronounce the G in the word
+    GNU when it is the name of this project.}{~---~Richard Stallman}
+}
+
+\end{document}

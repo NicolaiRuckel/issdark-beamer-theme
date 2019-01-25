@@ -1,0 +1,66 @@
+% A dark beamer theme for the Intelligent Software Systems group at the
+% Bauhaus-Universität Weimar.
+% Copyright (C) 2019 Nicolai Ruckel
+%
+% This program is free software: you can redistribute it and/or modify
+% it under the terms of the GNU General Public License as published by
+% the Free Software Foundation, either version 3 of the License, or
+% (at your option) any later version.
+%
+% This program is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU General Public License for more details.
+%
+% You should have received a copy of the GNU General Public License
+% along with this program. If not, see <https://www.gnu.org/licenses/>.
+
+\definecolor{foreground}{HTML}{EEEEEE}
+
+\definecolor{background}{HTML}{000000}
+\definecolor{shadecolor}{HTML}{121212}
+
+\definecolor{issdark-blue}{HTML}{00BCD4}
+\definecolor{issdark-orange}{HTML}{FF9B0F}
+
+\setbeamercolor*{normal text}{fg=foreground}
+
+\setbeamercolor*{background canvas}{bg=background}
+
+\setbeamercolor*{title}{fg=foreground}
+\setbeamerfont{title}{size=\Huge}
+
+\setbeamerfont{subtitle}{size=\large}
+
+\setbeamercolor{frametitle-left}{fg=issdark-blue}
+\setbeamercolor{frametitle}{fg=foreground}
+\setbeamerfont{frametitle}{size=\Large}
+\setbeamerfont{framesubtitle}{size=\small}
+
+\setbeamercolor*{itemize item}{fg=issdark-blue}
+\setbeamercolor*{itemize subitem}{fg=issdark-blue}
+
+\setbeamercolor*{enumerate item}{fg=issdark-blue}
+\setbeamercolor*{enumerate subitem}{fg=issdark-blue}
+
+\setbeamercolor*{page number in head/foot}{fg=foreground}
+
+\setbeamercolor{bibliography item}{fg=issdark-blue}
+\setbeamercolor*{bibliography entry title}{fg=foreground}
+\setbeamercolor{bibliography entry author}{fg=foreground}
+\setbeamercolor{bibliography entry note}{fg=foreground}
+\setbeamercolor{bibliography entry location}{fg=foreground}
+
+\setbeamercolor{alerted text}{fg=issdark-orange}
+
+\hypersetup{
+    breaklinks=true,
+    colorlinks=true,
+    linkcolor=issdark-blue,
+    citecolor=foreground,
+    filecolor=foreground,
+    urlcolor=issdark-blue,
+    anchorcolor=foreground,
+    menucolor=red,
+    plainpages=false
+}

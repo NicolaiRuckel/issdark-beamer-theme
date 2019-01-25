@@ -1,0 +1,49 @@
+% A dark beamer theme for the Intelligent Software Systems group at the
+% Bauhaus-Universität Weimar.
+% Copyright (C) 2019 Nicolai Ruckel
+%
+% This program is free software: you can redistribute it and/or modify
+% it under the terms of the GNU General Public License as published by
+% the Free Software Foundation, either version 3 of the License, or
+% (at your option) any later version.
+%
+% This program is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU General Public License for more details.
+%
+% You should have received a copy of the GNU General Public License
+% along with this program. If not, see <https://www.gnu.org/licenses/>.
+
+\mode<presentation>
+
+\useinnertheme{issdark}
+\useoutertheme{issdark}
+\usecolortheme{issdark}
+
+% --------
+% Commands
+% --------
+
+\usepackage[autostyle,english=american]{csquotes}
+\usepackage{framed,color}
+\let\oldenquote\enquote%
+\renewcommand{\enquote}[1]{{\itshape\oldenquote{#1}}}
+
+% Quotations
+
+% Inserts a quote, surrounded by quotation marks, in a box.
+%
+% Usage:
+% The first argument is the quote which gets surrounded by quotation marks.
+% The second one can be an author or reference and gets inserted after the
+% closing quotation mark.
+\newcommand{\boxenquote}[2]{\begin{shaded}{\enquote{#1}}#2\end{shaded}}
+
+% Highlight
+%
+% Highlights a word by changing its color and increasing its font size.
+\usepackage{relsize}
+\newcommand{\lalert}[1]{\alert{\larger[2]#1}}
+
+\mode<all>

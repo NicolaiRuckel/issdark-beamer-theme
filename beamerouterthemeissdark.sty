@@ -1,0 +1,58 @@
+% A dark beamer theme for the Intelligent Software Systems group at the
+% Bauhaus-Universität Weimar.
+% Copyright (C) 2019 Nicolai Ruckel
+%
+% This program is free software: you can redistribute it and/or modify
+% it under the terms of the GNU General Public License as published by
+% the Free Software Foundation, either version 3 of the License, or
+% (at your option) any later version.
+%
+% This program is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU General Public License for more details.
+%
+% You should have received a copy of the GNU General Public License
+% along with this program. If not, see <https://www.gnu.org/licenses/>.
+
+% remove the default navigation
+\setbeamertemplate{navigation symbols}{}
+
+
+\RequirePackage{tikz}
+
+\newlength{\marginedPaperWidth}{\paperwidth - 0.2cm}
+
+% Frame title
+\defbeamertemplate*{frametitle}{issdark}[1][]{
+  \vskip0.5cm%
+    \begin{beamercolorbox}[wd=\paperwidth,ht=1.2cm]{frametitle} 
+    \begin{tikzpicture}
+    \useasboundingbox(0,0) rectangle(\the\paperwidth,1.2);
+    {\usebeamercolor[fg]{frametitle-left}}
+    \fill[color=frametitle-left.fg] (0.2,0) rectangle(\the\marginedPaperWidth,1.2);
+     \ifx\insertframesubtitle\@empty%
+        {\node[anchor=west] at (0.3,0.61){\usebeamerfont{frametitle}\insertframetitle};}
+        \else%
+        {\node[anchor= west] at (0.2,0.81){\usebeamerfont{frametitle}\insertframetitle};%
+         \node[anchor= west] at (0.4,0.25){\usebeamerfont{framesubtitle}\insertframesubtitle};}%
+        \fi
+    \end{tikzpicture}
+  \end{beamercolorbox}
+}
+
+
+% Footer
+\setbeamertemplate{footline}{%
+  \hfill
+  \begin{minipage}[t]{0.5\paperwidth}
+    \begin{beamercolorbox}[wd=1.5cm, ht = .5cm]{page number in head/foot}
+      \ifnum\thepage>1\relax%
+        \hskip0.5cm%
+        \flushright
+        \insertframenumber\,/\,\inserttotalframenumber\kern1em\vskip-.2em%
+        \hfill
+      \fi
+    \end{beamercolorbox}
+  \end{minipage}
+}
