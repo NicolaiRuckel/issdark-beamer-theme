@@ -5,6 +5,9 @@ Systems group at Bauhaus-Universität Weimar.
 You can download a sample presentation
 [here][sample presentation].
 
+## Dependencies
+* xelatex, lualatex or some other LaTeX compiler that can use other fonts
+
 ## Usage
 To use this theme you can either put the `.sty` files and the `issdark_image`
 folder into your presentation root folder, or clone this repository to
