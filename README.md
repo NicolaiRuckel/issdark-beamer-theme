@@ -39,4 +39,4 @@ closing quotation mark.
 
 Highlights a word by changing its color and increasing its font size
 
-[sample presentation]: https://github.com/NicolaiRuckel/issdark-beamer-theme/files/2807535/sample.pdf
+[sample presentation]: https://github.com/NicolaiRuckel/issdark-beamer-theme/files/2808243/sample.pdf
