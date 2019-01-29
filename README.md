@@ -1,7 +1,9 @@
 # ISSDark Beamer Theme
-A dark beamer theme for the Intelligent Software Systems group.
+A dark beamer theme I created for presentations for the Intelligent Software
+Systems group at Bauhaus-Universität Weimar.
 
-You can download a sample presentation [here](https://github.com/NicolaiRuckel/issdark-beamer-theme/files/2806616/sample.pdf).
+You can download a sample presentation
+[here][sample presentation].
 
 ## Usage
 To use this theme you can either put the `.sty` files and the `issdark_image`
@@ -36,3 +38,5 @@ closing quotation mark.
 `\lalert{foo}`
 
 Highlights a word by changing its color and increasing its font size
+
+[sample presentation]: (https://github.com/NicolaiRuckel/issdark-beamer-theme/files/2806616/sample.pdf)
