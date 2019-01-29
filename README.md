@@ -1,7 +1,7 @@
 # ISSDark Beamer Theme
 A dark beamer theme for the Intelligent Software Systems group.
 
-You can download a sample presentation [here](https://github.com/NicolaiRuckel/issdark-beamer-theme/files/2796293/sample.pdf)
+You can download a sample presentation [here](https://github.com/NicolaiRuckel/issdark-beamer-theme/files/2806616/sample.pdf).
 
 ## Usage
 To use this theme you can either put the `.sty` files and the `issdark_image`
