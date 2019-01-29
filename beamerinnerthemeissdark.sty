@@ -19,6 +19,11 @@
 \usepackage[sfdefault]{Fira Sans}
 \usepackage{FiraMono}
 
+\usepackage{fontawesome}
+\usepackage{marvosym}
+
+\newcommand{\btVFill}{\vskip0pt plus 1filll}
+
 \defbeamertemplate*{title page}{issdark}
 {
   \addtocounter{framenumber}{-1}
@@ -47,6 +52,12 @@
         \inserttitlegraphic
       \end{column}
     \end{columns}
+
+    \btVFill
+    \footnotesize
+    \faTwitter~TwitterHandle |
+    \faGithub~GithubName |
+    \Letter~name.surname@something.com
 }
 
 \setbeamertemplate{itemize items}[circle]
