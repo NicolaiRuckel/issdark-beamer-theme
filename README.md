@@ -51,3 +51,7 @@ closing quotation mark.
 Highlights a word by changing its color and increasing its font size
 
 [sample presentation]: https://github.com/NicolaiRuckel/issdark-beamer-theme/files/2808243/sample.pdf
+
+## Contributing
+If you want to contribute to this project, please read the [contribution
+guidelines](CONTRIBUTING.md) first.
