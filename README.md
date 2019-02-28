@@ -1,6 +1,12 @@
 # ISSDark Beamer Theme
-A dark beamer theme I created for presentations for the Intelligent Software
-Systems group at Bauhaus-Universität Weimar.
+A dark beamer theme by [Nicolai Ruckel](https://github.com/NicolaiRuckel)
+created for presentations for the Intelligent Software Systems group at
+Bauhaus-Universität Weimar.
+
+The main design goal was to have a dark background to work on low-light
+environments (i.e. presentations with dimmed or turned-off lights) with no
+unnecessary and distracting elements on each slide. That’s why the date, name of
+the author, and name of the talk are only on the title slide.
 
 You can download a sample presentation
 [here][sample presentation].
@@ -28,6 +34,8 @@ The title page shows the contents of:
 * `\titlegraphic`
 
 ## New Commands
+I also added some new macros for things I have to use a lot, like quotations or
+highlighting parts of the text.
 
 ### Quotations
 `\boxenquote{Quotation}{~---~Author}`
