@@ -1,4 +1,4 @@
-# ISSDark Beamer Theme
+# [ISSDark Beamer Theme](https://github.com/NicolaiRuckel/issdark-beamer-theme)
 A dark beamer theme by [Nicolai Ruckel](https://github.com/NicolaiRuckel)
 created for presentations for the Intelligent Software Systems group at
 Bauhaus-Universität Weimar.
