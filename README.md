@@ -12,7 +12,8 @@ You can download a sample presentation
 [here][sample presentation].
 
 ## Dependencies
-* xelatex, lualatex or some other LaTeX compiler that can use other fonts
+* xelatex, lualatex or some other LaTeX compiler that can use other fonts than
+  the default ones.
 
 ## Usage
 To use this theme you can either put the `.sty` files and the `issdark_image`
