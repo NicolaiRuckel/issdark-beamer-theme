@@ -15,7 +15,6 @@ deploy:
   api_key:
     secure: GrtC1sQX4kyXCS4Smzt6DYeqWiBHCCwT3VpJ4rsx8bIiT0/Q7PgsvvNPj81TfuJBuSgocWtL+qj9KQeuB8ERvROoa/4wZdfzzoUMNm5FXShWZnKlaI3KqoviLT2xZ0G1lVOgoHuTN4EjCloJXoztfTEj/WSmHAIG8GypDhv/u77lNzAeBRfCCK8jQYPHeKY7FTRwVTFeU+bgmVbgZUGrvQiK/h7j330/1LFidiKm6T5RBD3xs416zuVFrKrTviVe2O0nmk5hz75GcCJGYtT3SzydTnjtKZM6eaMt3jX1tQw1b/tycxor54logtwu0kemtG4LpaDiOVU+D+Lf6CbKkw2TjcRXyTggyEb4qvx5H2BB8BDBUGv3uKDFa4GQjjr2fGAabHVVg1xCibSzTJDnAu2CKARVFH6DX6rJu1vFCjg3jSY5CMlEOVfUnzbccfnmtyH1qjNCJmiames3NCNEIIDjfh9LT2Koc28u7g3+8uq+SbFkhbVU3R4xYLKOdCB6zO3Hbpb85Uhl2OhB8Vrl4J+fLha5jmQqRhK62KLEkf1ZWlRqT2mp7wj2rj2Z+bg/2N+l8UmCccAVjehmJjwffniFfU8ge6oHRx/b1/XiqwcE8iK3oAP2kSNt/lKnUmuKM+lw3cC/YK+b+y91lC29Wy2Z5bnRueBHMwqNI44YP+U=
   file: sample.pdf
-    repo: NicolaiRuckel/issdark-beamer-theme
   skip_cleanup: true
   on:
     tags: true
