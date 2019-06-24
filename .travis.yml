@@ -1,0 +1,26 @@
+# Taken from https://malramsay.com/post/compiling_latex_on_travis/
+
+language: minimal
+
+cache:
+  directories:
+  - "$HOME/.cache/Tectonic"
+  on:
+before_install:
+- wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O $HOME/miniconda.sh
+- bash $HOME/miniconda.sh -b -u -p $HOME/miniconda
+- export PATH="$HOME/miniconda/bin:$PATH"
+- hash -r
+- conda install -y -c conda-forge tectonic==0.1.8
+
+script:
+- tectonic sample.tex
+
+deploy:
+  provider: releases
+  api_key:
+    secure: fNDGuN0NNc9L5o6oRLHtvircauFRWzheb6Rlkvtn3dhBaZtsLyFJdsXYExKBcu6MfB2F2wAjZJLIg+VpWSkR8+BFqRi0aQdp3KyCKIIE/V6v+uzYUjcAQKRGCSSNiy3e5jBcUiY1WKjHMveISFPPSmu8/Y7c6djfkixrDZ+QDi98fud1nnw59pwX5i/QJ5vA0pa0O9Hp7ZzbkNLksbFSlbUeMK6nXm3KsLKVAa2REYIPD2G2YnjiIULCEhPtvNLMeNYjTqIPE7Iz3ATm0flKa3UOp3kngPQaBK/lOYlLbb+qvda2CSH6I1B+iml7VRFTF4w3XMimVF5Cei0Qh6jtjKYxFBvZsZSv0JX0wtJvJDyOq4vBb4DAOwvdHfJAKpTVq1tu96/irkaa5UYIZseRPF6Xvg8sarzrj0f8EheDHk2M1Q4JjvDBeaaZGFO6vQRcrYQziCoGgc+X0MYkkT7a6Sxev6V83QM8aOmrVqPyQEqJa3vOSSkxOiUZMtymibliU0DhyjQdqOMC1D6ZEP0Hq60FOI2ByzVTIJGhqLEVKFJmK29IaZsf1U7XnN5PK1ZJ3JGLGKK8eT1pMODtoqbyH2HuWDzjBgidarV02goS0hGdQ2xKzZsre1dRyGjpMpInwih0Nzd92VOy+EnG/pUNIvuReFeyvAGnf7QKYQJlTMU=
+  file: sample.pdf
+  skip_cleanup: true
+  on:
+    tags: true
