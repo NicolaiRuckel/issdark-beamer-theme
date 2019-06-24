@@ -1,7 +1,6 @@
 # [ISSDark Beamer Theme](https://github.com/NicolaiRuckel/issdark-beamer-theme)
-A dark beamer theme by [Nicolai Ruckel](https://github.com/NicolaiRuckel)
-created for presentations for the Intelligent Software Systems group at
-Bauhaus-Universität Weimar.
+A dark beamer theme created for my presentations for the Intelligent Software
+Systems group at Bauhaus-Universität Weimar.
 
 The main design goal was to have a dark background to work on low-light
 environments (i.e. presentations with dimmed or turned-off lights) with no
