@@ -5,7 +5,7 @@ language: minimal
 cache:
   directories:
   - "$HOME/.cache/Tectonic"
-  on:
+
 before_install:
 - wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O $HOME/miniconda.sh
 - bash $HOME/miniconda.sh -b -u -p $HOME/miniconda
@@ -19,7 +19,7 @@ script:
 deploy:
   provider: releases
   api_key:
-    secure: fNDGuN0NNc9L5o6oRLHtvircauFRWzheb6Rlkvtn3dhBaZtsLyFJdsXYExKBcu6MfB2F2wAjZJLIg+VpWSkR8+BFqRi0aQdp3KyCKIIE/V6v+uzYUjcAQKRGCSSNiy3e5jBcUiY1WKjHMveISFPPSmu8/Y7c6djfkixrDZ+QDi98fud1nnw59pwX5i/QJ5vA0pa0O9Hp7ZzbkNLksbFSlbUeMK6nXm3KsLKVAa2REYIPD2G2YnjiIULCEhPtvNLMeNYjTqIPE7Iz3ATm0flKa3UOp3kngPQaBK/lOYlLbb+qvda2CSH6I1B+iml7VRFTF4w3XMimVF5Cei0Qh6jtjKYxFBvZsZSv0JX0wtJvJDyOq4vBb4DAOwvdHfJAKpTVq1tu96/irkaa5UYIZseRPF6Xvg8sarzrj0f8EheDHk2M1Q4JjvDBeaaZGFO6vQRcrYQziCoGgc+X0MYkkT7a6Sxev6V83QM8aOmrVqPyQEqJa3vOSSkxOiUZMtymibliU0DhyjQdqOMC1D6ZEP0Hq60FOI2ByzVTIJGhqLEVKFJmK29IaZsf1U7XnN5PK1ZJ3JGLGKK8eT1pMODtoqbyH2HuWDzjBgidarV02goS0hGdQ2xKzZsre1dRyGjpMpInwih0Nzd92VOy+EnG/pUNIvuReFeyvAGnf7QKYQJlTMU=
+    secure: L0Ty9pr7HRGq1by7aMvwcG/lCIuirQNMv0r2lNuFp+hoG1le0j1lhZOcQYjX3LEUsHUEV8S4+Bb0KA8rdcrgBmLGsdClIdsWsB7U29aDQLZnDLgT020lHbqsI/hY1akNn7fbs9FyLUC5lWr72YzXfLDF+7ubam/H+Rel3YPqwW58dyQBVvW5VO7i8vpbPNmRg8cyuZAlKKWnrzK4F13Hz8TQpM/8MSfUmzrg54LRFbkkv4SJpjCPs6bMkhez6MhNgrCtdaU0twjbm4bDTiETR8BKIChrVMuJWT67lzI8a2lCcaBZEM3uCGwb4+uXLvZr1l6N+4lubWCUA2iQfL3t/ItS8/+HswwHiZU0R5KGtNnnB1VJTMp5rk8LKiRjR7jquImCsOqtpqdoRJDANbQt4J4h3Tjrja1FiPxvLSZ5NUYe1SXvVSeeEL5I68Z0ea/7A8VBm84l0FIMqXX82XKhqoBQQuqxqQOR9sx/ACgJmIG4bp3w9whMUCNfDSZSURCnW2GMoFc/H5g5VCShs+aPMYTNHdS9T5zlgpEEX4npiH87oKUlJV1ZYZLh0FzW8yQZzPJsYzrtYFT5N83BngOxJ689zYwyGZa+N/BMqqxMEzAgI9XJWMsVnCcJN73ovtqajZkVgWfE3NxH5I/AMusLYU68FwLLDqwErHQD5gfXiVQ=
   file: sample.pdf
   skip_cleanup: true
   on:
