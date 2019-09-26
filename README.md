@@ -15,10 +15,8 @@ You can download a sample presentation
   the default ones.
 
 ## Usage
-To use this theme you can either put the `.sty` files and the `issdark_image`
-folder into your presentation root folder, or clone this repository to
-`$TEXMFHOME/tex/latex/beamer/`.
-Then you can use the theme with
+To use this theme you can either put the `.sty` files or clone this repository to
+`$TEXMFHOME/tex/latex/beamer/`. Then you can use the theme with
 
 ```tex
 \usetheme{issdark}
