@@ -17,17 +17,21 @@
 
 \documentclass[17pt,aspectratio=169]{beamer}
 
+\usetheme{issdark}
+
 \title{Sample Presentation}
 \author{Nicolai Ruckel}
+\twitter{NicolaiRuckel}
+\github{NicolaiRuckel}
+\mail{nicolai@ruckel.de}
+
 \date{\today}
 \titlegraphic{\centering\includegraphics[width=.6\textwidth]{example-image-a}}
-
-\usetheme{issdark}
 
 \begin{document}
 
 \begin{frame}
-  \titlepage
+  \titlepage%
 \end{frame}
 
 \begin{frame}{}{}
@@ -38,12 +42,27 @@
   \normalsize Etiam ut nunc lacinia, ultricies leo suscipit, efficitur.
 \end{frame}
 
+\begin{frame}{Contact Information}{}
+  You can add your contact information to the title slide. If you need it
+  somewhere else, for example at your last slide, you can input it with
+  \texttt{\textbackslash contactinformation}.
+\end{frame}
+
+\begin{frame}{Contact Information}{}
+  Define your information with the following commands:
+  \begin{itemize}
+    \item \texttt{\textbackslash twitter}
+    \item \texttt{\textbackslash github}
+    \item \texttt{\textbackslash mail}
+  \end{itemize}
+  Undefined values are ignored.
+\end{frame}
+
 \begin{frame}{Highlighting}{}
   \Large
-  You can \lalert{highlight} random words like \lalert{all} the other cool kids!
-  \vfill\normalsize
-  Of course you still can use \texttt{\textbackslash alert} to just
-  \alert{highlight} text without changing its size.
+  You can \alert{highlight} random words like \alert{all} the other cool kids
+  with \texttt{\textbackslash alert}!
+  \vfill%
 \end{frame}
 
 \begin{frame}{Another Sample Page}{An Example of Lists}
@@ -100,7 +119,10 @@
 \part{} % no section title in footer for this slides
 \begin{frame}[noframenumbering, plain]
   \begin{center}
+    \vfill
     \LARGE Thank You For Your Attention!
+    \vfill
+    \contactinformation%
   \end{center}
 \end{frame}
 
