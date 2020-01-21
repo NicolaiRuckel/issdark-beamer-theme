@@ -11,10 +11,12 @@ You can download a sample presentation
 [here][sample presentation].
 
 ## Dependencies
+
 * xelatex, lualatex or some other LaTeX compiler that can use other fonts than
   the default ones.
 
 ## Usage
+
 To use this theme you can either put the `.sty` files or clone this repository to
 `$TEXMFHOME/tex/latex/beamer/`. Then you can use the theme with
 
@@ -23,6 +25,7 @@ To use this theme you can either put the `.sty` files or clone this repository t
 ```
 
 ### Title Page
+
 The title page shows the contents of:
 
 * `\title`
@@ -32,10 +35,12 @@ The title page shows the contents of:
 * `\titlegraphic`
 
 ## New Commands
+
 I also added some new macros for things I have to use a lot, like quotations or
 highlighting parts of the text.
 
 ### Quotations
+
 `\boxenquote{Quotation}{~---~Author}`
 
 Inserts a quote, surrounded by quotation marks, in a box.
@@ -44,11 +49,13 @@ The second one can be an author or reference and gets inserted after the
 closing quotation mark.
 
 ### Highlight
+
 `\lalert{foo}`
 
 Highlights a word by changing its color and increasing its font size
 
 ## Contributing
+
 If you want to contribute to this project, please read the [contribution
 guidelines](CONTRIBUTING.md) first.
 
