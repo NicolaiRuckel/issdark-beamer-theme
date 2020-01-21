@@ -12,13 +12,14 @@ You can download a sample presentation
 
 ## Dependencies
 
-* xelatex, lualatex or some other LaTeX compiler that can use other fonts than
-  the default ones.
+* lualatex or some other LaTeX compiler that can use other fonts than
+  the default ones. If you have Font Awesome installed (or don’t use the contact
+  information commands) xelatex should also work.
 
 ## Usage
 
-To use this theme you can either put the `.sty` files or clone this repository to
-`$TEXMFHOME/tex/latex/beamer/`. Then you can use the theme with
+To use this theme you can either put the `.sty` files or clone this repository
+to `$TEXMFHOME/tex/latex/beamer/`. Then you can use the theme with
 
 ```tex
 \usetheme{issdark}
@@ -33,6 +34,9 @@ The title page shows the contents of:
 * `\author`
 * `\date`
 * `\titlegraphic`
+* `\twitter`
+* `\github`
+* `\mail`
 
 ## New Commands
 
@@ -50,9 +54,15 @@ closing quotation mark.
 
 ### Highlight
 
-`\lalert{foo}`
+`\alert{foo}`
 
-Highlights a word by changing its color and increasing its font size
+Highlights a word by changing its color.
+
+### Contact Information
+
+`\contactinformation`
+
+Insert your contact information (Twitter, GitHub, and mail).
 
 ## Contributing
 
