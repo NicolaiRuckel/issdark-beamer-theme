@@ -19,45 +19,80 @@
 \usepackage[sfdefault]{Fira Sans}
 \usepackage{FiraMono}
 
+\usepackage{fontspec}
 \usepackage{fontawesome}
 \usepackage{marvosym}
 
 \newcommand{\btVFill}{\vskip0pt plus 1filll}
+
+\newcommand{\twitter}[1]{
+  \def\hastwitter{1}
+  \def\twitterhandle{#1}
+}
+
+\newcommand{\inputtwitter}{
+  \ifdefined\hastwitter
+  \href{https://www.twitter.com/\twitterhandle}{\faTwitter~@\twitterhandle}
+  \fi
+}
+
+\newcommand{\github}[1]{
+  \def\hasgithub{1}
+  \def\githubuser{#1}
+}
+
+\newcommand{\inputgithub}{
+  \ifdefined\hasgithub
+  \href{https://www.github.com/\githubuser}{\faGithub~\githubuser}
+  \fi
+}
+
+\newcommand{\mail}[1]{
+  \def\hasmail{1}
+  \def\mailaddress{#1}
+}
+
+\newcommand{\inputmail}{
+  \ifdefined\hasmail
+  \href{mailto:\mailaddress}{\Letter~\mailaddress}
+  \fi
+}
+
+\newcommand{\contactinformation}{%
+  \footnotesize
+  \ifdefined\hastwitter\inputtwitter\hfill\fi
+  \ifdefined\hasgithub\inputgithub\hfill\fi
+  \ifdefined\hasmail\inputmail\hfill\fi
+}
 
 \defbeamertemplate*{title page}{issdark}
 {
   \addtocounter{framenumber}{-1}
   \vfill
     {
-      \usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle
-      \par
+      \usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle\par
     }
     \vspace*{1em}
     {
-      \usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle
-      \par
+      \usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle\par
     }
     \begin{columns}[T]
       \hspace*{2em}
       \begin{column}{.33\textwidth}
         {
           \begin{flushleft}
-            \usebeamerfont{author}\usebeamercolor[fg]{author}\insertauthor
-            \par
-            \usebeamerfont{date}\usebeamercolor[fg]{date}\insertdate
+            \usebeamerfont{author}\usebeamercolor[fg]{author}\insertauthor\par
+            \usebeamerfont{date}\usebeamercolor[fg]{date}\insertdate%
           \end{flushleft}
         }
       \end{column}
       \begin{column}{.66\textwidth}
-        \inserttitlegraphic
+        \inserttitlegraphic%
       \end{column}
     \end{columns}
 
-    \btVFill
-    \footnotesize
-    \faTwitter~TwitterHandle |
-    \faGithub~GithubName |
-    \Letter~name.surname@something.com
+    \btVFill%
+    \contactinformation%
 }
 
 \setbeamertemplate{itemize items}[circle]
