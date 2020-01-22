@@ -12,9 +12,8 @@ You can download a sample presentation
 
 ## Dependencies
 
-* lualatex or some other LaTeX compiler that can use other fonts than
-  the default ones. If you have Font Awesome installed (or don’t use the contact
-  information commands) xelatex should also work.
+* xelatex, lualatex or some other LaTeX compiler that can use other fonts than
+  the default ones. Tectonic also works (and is used in CI).
 
 ## Usage
 
