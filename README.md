@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/NicolaiRuckel/issdark-beamer-theme.svg?branch=master)](https://travis-ci.com/NicolaiRuckel/issdark-beamer-theme)
+
 # [ISSDark Beamer Theme](https://github.com/NicolaiRuckel/issdark-beamer-theme)
 A dark beamer theme created for my presentations for the Intelligent Software
 Systems group at Bauhaus-Universität Weimar.
