@@ -15,10 +15,15 @@
 % You should have received a copy of the GNU General Public License
 % along with this program. If not, see <https://www.gnu.org/licenses/>.
 
-\definecolor{foreground}{HTML}{EEEEEE}
-
-\definecolor{background}{HTML}{000000}
-\definecolor{shadecolor}{HTML}{121212}
+\if@issdark@light
+  \definecolor{foreground}{HTML}{222222}
+  \definecolor{background}{HTML}{FFFFFF}
+  \definecolor{shadecolor}{HTML}{EEEEEE}
+\else
+  \definecolor{foreground}{HTML}{EEEEEE}
+  \definecolor{background}{HTML}{000000}
+  \definecolor{shadecolor}{HTML}{121212}
+\fi
 
 \definecolor{issdark-blue}{HTML}{00BCD4}
 \definecolor{issdark-orange}{HTML}{FF9B0F}

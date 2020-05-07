@@ -17,6 +17,17 @@
 
 \mode<presentation>
 
+\newif\if@issdark@light
+\@issdark@lightfalse
+\DeclareOptionBeamer{light}{\@issdark@lighttrue}
+\ProcessOptionsBeamer
+
+\newif\if@issdark@loadfirafonts
+\@issdark@loadfirafontstrue
+
+\DeclareOptionBeamer{nofirafonts}{\@issdark@loadfirafontsfalse}
+\ProcessOptionsBeamer
+
 \useinnertheme{issdark}
 \useoutertheme{issdark}
 \usecolortheme{issdark}

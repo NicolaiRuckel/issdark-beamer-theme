@@ -26,6 +26,12 @@ to `$TEXMFHOME/tex/latex/beamer/`. Then you can use the theme with
 \usetheme{issdark}
 ```
 
+There is also the option for a light theme:
+
+```tex
+\usetheme[light]{issdark}
+```
+
 ### Title Page
 
 The title page shows the contents of:
