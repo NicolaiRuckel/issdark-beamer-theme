@@ -9,7 +9,8 @@ before_install:
 - hash -r
 - conda install -y -c conda-forge tectonic==0.1.11
 script:
-- tectonic --keep-intermediates sample.tex
+- tectonic --keep-intermediates main.tex
+- mv main.pdf sample.pdf
 deploy:
   provider: releases
   api_key:
