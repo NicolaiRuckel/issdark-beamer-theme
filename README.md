@@ -1,13 +1,12 @@
 [![Build Status](https://travis-ci.com/NicolaiRuckel/issdark-beamer-theme.svg?branch=master)](https://travis-ci.com/NicolaiRuckel/issdark-beamer-theme)
 
 # [ISSDark Beamer Theme](https://github.com/NicolaiRuckel/issdark-beamer-theme)
-A dark beamer theme created for my presentations for the Intelligent Software
-Systems group at Bauhaus-Universität Weimar.
 
-The main design goal was to have a dark background to work on low-light
-environments (i.e. presentations with dimmed or turned-off lights) with no
-unnecessary and distracting elements on each slide. That’s why the date, name of
-the author, and name of the talk are only on the title slide.
+The beamer theme I use for my presentations. The main design goal was to have a
+dark background to work on low-light environments (i.e. presentations with
+dimmed or turned-off lights) with no unnecessary and distracting elements on
+each slide. That’s why the date, name of the author, and name of the talk are
+only on the title slide.
 
 You can download a sample presentation
 [here][sample presentation].
@@ -75,6 +74,13 @@ Insert your contact information (Twitter, GitHub, and mail).
 
 If you want to contribute to this project, please read the [contribution
 guidelines](CONTRIBUTING.md) first.
+
+## What's the Name About?
+
+I originally created for my presentations for the Intelligent Software Systems
+group at Bauhaus-Universität Weimar, abbreviated as ISS.
+It isn't tied to that chair in any way, in fact no one except me ever used it
+any way.
 
 
 [sample presentation]: https://github.com/NicolaiRuckel/issdark-beamer-theme/releases/latest
