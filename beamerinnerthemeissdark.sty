@@ -50,17 +50,21 @@
   \ifdefined\hasmail\inputmail\hfill\fi
 }
 
+\let\oldtitlegraphic\titlegraphic
+\renewcommand{\titlegraphic}[1]{\def\hastitlegraphic{1}\oldtitlegraphic{#1}}
+
 \defbeamertemplate*{title page}{issdark}
 {
   \addtocounter{framenumber}{-1}
   \vfill
-    {
-      \usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle\par
-    }
-    \vspace*{1em}
-    {
-      \usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle\par
-    }
+  {
+    \usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle\par
+  }
+  \vspace*{1em}
+  {
+    \usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle\par
+  }
+  \ifdefined\hastitlegraphic%
     \begin{columns}[T]
       \hspace*{2em}
       \begin{column}{.33\textwidth}
@@ -75,9 +79,16 @@
         \inserttitlegraphic%
       \end{column}
     \end{columns}
+  \else
+    \hspace*{2em}
+    \begin{center}
+      \usebeamerfont{author}\usebeamercolor[fg]{author}\insertauthor\par
+      \usebeamerfont{date}\usebeamercolor[fg]{date}\insertdate%
+    \end{center}
+  \fi
 
-    \btVFill%
-    \contactinformation%
+  \btVFill%
+  \contactinformation%
 }
 
 \setbeamertemplate{itemize items}[circle]

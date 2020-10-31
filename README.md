@@ -8,8 +8,7 @@ dimmed or turned-off lights) with no unnecessary and distracting elements on
 each slide. That’s why the date, name of the author, and name of the talk are
 only on the title slide.
 
-You can download a sample presentation
-[here][sample presentation].
+You can download a sample presentation [here][sample presentation].
 
 ## Dependencies
 
@@ -44,6 +43,9 @@ The title page shows the contents of:
 * `\github`
 * `\mail`
 
+If no title graphic is specified the author name and date are centered instead
+of left aligned.
+
 ## New Commands
 
 I also added some new macros for things I have to use a lot, like quotations or
@@ -70,17 +72,14 @@ Highlights a word by changing its color.
 
 Insert your contact information (Twitter, GitHub, and mail).
 
+### Final Slide
+
+With `\finalslide{foo}` you can add a slide with the contact information and
+without any header or footer.
+
 ## Contributing
 
 If you want to contribute to this project, please read the [contribution
 guidelines](CONTRIBUTING.md) first.
-
-## What's the Name About?
-
-I originally created for my presentations for the Intelligent Software Systems
-group at Bauhaus-Universität Weimar, abbreviated as ISS.
-It isn't tied to that chair in any way, in fact no one except me ever used it
-any way.
-
 
 [sample presentation]: https://github.com/NicolaiRuckel/issdark-beamer-theme/releases/latest

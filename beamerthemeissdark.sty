@@ -25,7 +25,7 @@
 \renewcommand{\enquote}[1]{{\itshape\oldenquote{#1}}}
 
 % Quotations
-
+% ----------
 % Inserts a quote, surrounded by quotation marks, in a box.
 %
 % Usage:
@@ -33,5 +33,21 @@
 % The second one can be an author or reference and gets inserted after the
 % closing quotation mark.
 \newcommand{\boxenquote}[2]{\begin{shaded}{\enquote{#1}}#2\end{shaded}}
+
+% Final slide
+% -----------
+% Adds a slide with the specified text and the contact information. It does not
+% show any header or footer.
+\newcommand{\finalslide}[1]{%
+  \part{} % no section title in footer for this slides
+  \begin{frame}[noframenumbering, plain]
+    \begin{center}
+      \vfill
+      \LARGE #1
+      \vfill
+      \contactinformation%
+    \end{center}
+  \end{frame}
+}
 
 \mode<all>
